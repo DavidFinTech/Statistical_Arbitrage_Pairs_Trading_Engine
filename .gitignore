@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environments
+.venv/
+venv/
+env/
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# PyCharm / JetBrains IDE
+.idea/
+
+# macOS OS files
+.DS_Store
+
+# Project Data & Archives
+*.csv
+*.zip
