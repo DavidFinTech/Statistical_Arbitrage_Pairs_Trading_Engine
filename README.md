@@ -35,8 +35,8 @@ This engine automates the core quantitative research and backtesting pipeline fo
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/DavidFinTech/Statistical_Arbitrage_Pairs_Trading-Engine.git
-   cd Statistical_Arbitrage_Pairs_Trading-Engine
+   git clone https://github.com/DavidFinTech/Statistical_Arbitrage_Pairs_Trading_Engine.git
+   cd Statistical_Arbitrage_Pairs_Trading_Engine
    ```
 
 2. Create and activate a virtual environment:
