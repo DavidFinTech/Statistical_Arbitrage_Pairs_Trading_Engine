@@ -18,8 +18,7 @@ This engine automates the core quantitative research and backtesting pipeline fo
 *   **Data Ingestion:** Automated retrieval of historical adjusted close prices using `yfinance`.
 *   **Statistical Cointegration:** Utilizes `statsmodels` to perform Augmented Dickey-Fuller (ADF) tests (via `coint`) to verify long-term mean-reverting relationships between asset pairs.
 *   **Fixed Hedge Ratio with dynamic Z Score signals:** Calculates the beta between assets using Ordinary Least Squares (OLS) regression to construct a stationary spread.
-*   **Signal Generation:** Computes a 20-day rolling Z-score to generate discrete Buy (-1), Hold (0), and Sell (1) signals based on standard deviation thresholds.
-*   **Strategy Backtesting:** Simulates historical portfolio performance, accounting for daily spread returns and position shifts to eliminate look-ahead bias.
+*   **Signal Generation:** Uses a 20-day rolling Z-score to generate short-spread (−1), flat (0), and long-spread (+1) positions.*   **Strategy Backtesting:** Simulates historical portfolio performance, accounting for daily spread returns and position shifts to eliminate look-ahead bias.
 *   **Performance Visualization:** Generates comprehensive Matplotlib visualizations comparing the portfolio equity curve directly against the Z-score signal tripwires.
 
 ### Tech Stack
