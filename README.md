@@ -7,7 +7,7 @@
 ![Statsmodels](https://img.shields.io/badge/statsmodels-lightgrey.svg)
 ![yfinance](https://img.shields.io/badge/yfinance-lightgrey.svg)
 
-An algorithmic trading engine built in Python that identifies and exploits mean-reverting relationships between cointegrated equity pairs. This project specifically analyzes the historical relationship between the Vanguard Energy ETF (VDE) and the Energy Select Sector SPDR Fund (XLE) to generate actionable trading signals.
+An algorithmic trading engine built in Python that identifies and exploits mean-reverting relationships between cointegrated equity pairs. This project specifically analyzes the historical relationship between the Fidelity MSCI Energy Index ETF(FENY) and the Vanguard Energy ETF (VDE) to generate actionable trading signals.
 
 ### Project Overview
 
