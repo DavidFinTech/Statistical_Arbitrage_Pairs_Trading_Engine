@@ -11,7 +11,7 @@ An algorithmic trading engine built in Python that identifies and exploits mean-
 
 ### Project Overview
 
-This engine automates the core quantitative research and backtesting pipeline for statistical arbitrage. It ingests historical market data, tests for statistical cointegration, calculates dynamic hedge ratios, and simulates a complete trading strategy using rolling Z-scores to trigger long and short positions. 
+This engine automates the core quantitative research and backtesting pipeline for statistical arbitrage. It ingests historical market data, tests for statistical cointegration, estimates a fixed training-period hedge ratio, and simulates a complete trading strategy using rolling Z-scores to trigger long and short positions. 
 
 ### Key Features
 
