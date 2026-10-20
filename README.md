@@ -19,7 +19,7 @@ This engine automates the core quantitative research and backtesting pipeline fo
 *   **Statistical Cointegration:** Utilizes `statsmodels` to perform Augmented Dickey-Fuller (ADF) tests (via `coint`) to verify long-term mean-reverting relationships between asset pairs.
 *   **Fixed Hedge Ratio with dynamic Z Score signals:** Calculates the beta between assets using Ordinary Least Squares (OLS) regression to construct a stationary spread.
 *   **Signal Generation:** Uses a 20-day rolling Z-score to generate short-spread (−1), flat (0), and long-spread (+1) positions.*   
-*   **Strategy Backtesting:** Simulates historical portfolio performance, accounting for daily spread returns and position shifts to eliminate look-ahead bias.
+*   **Strategy Backtesting:** Uses separate training/testing periods and delays positions by one trading day. Results exclude trading and borrowing costs.
 *   **Performance Visualization:** Generates comprehensive Matplotlib visualizations comparing the portfolio equity curve directly against the Z-score signal tripwires.
 
 ### Tech Stack
@@ -29,6 +29,15 @@ This engine automates the core quantitative research and backtesting pipeline fo
 *   **Quantitative Modeling:** Statsmodels
 *   **Data Visualization:** Matplotlib
 *   **Financial Data API:** yfinance
+
+### Methodology & Limitations
+
+- **Training (2021–2023):** Tested six ETF pairs using a Bonferroni-adjusted significance threshold of 0.05/6. Selected FENY–VDE and estimated a fixed OLS hedge ratio.
+- **Testing (2024–2025):** Applied that hedge ratio with 20-day rolling Z-score signals. Positions are delayed by one trading day.
+- **Execution:** Uses closing prices as an approximation. Execution at the signal-generating close is not guaranteed.
+- **Position sizing:** Compounded returns assume daily resizing so gross exposure equals account equity while invested.
+- **Costs:** Excludes commissions, bid–ask spreads, slippage, borrowing fees, and financing costs.
+- **Scope:** This is a historical research backtest, not evidence of future profitability.
 
 ### Installation & Usage
 
