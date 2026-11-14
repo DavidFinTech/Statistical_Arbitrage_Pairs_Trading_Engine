@@ -8,11 +8,11 @@ I tested six pairs of energy ETFs to see whether any had a spread I could use fo
 2. I estimated the FENY–VDE hedge ratio with OLS on the training period and kept it fixed for the backtest.
 3. I used a 20-day rolling Z-score of the spread to decide when to go long, go short, or stay flat. I shifted positions by one trading day so the signal took effect the next day.
 
-The notebook plots the strategy's equity curve and the Z-score signals.
+The notebook plots the strategy's equity curve and the Z-score signals. It also reports the Sharpe ratio, the maximum drawdown, how many times the position changed, and how the return holds up at trading costs from 1 to 10 basis points per trade.
 
 ## Backtest assumptions
 
-The backtest uses closing prices as an approximation and resizes positions daily so gross exposure equals account equity while invested. It excludes commissions, bid–ask spreads, slippage, borrowing fees, and financing costs.
+The backtest uses closing prices as an approximation and resizes positions daily so gross exposure equals account equity while invested. The headline return excludes commissions, bid–ask spreads, slippage, borrowing fees, and financing costs. The cost table at the end of the notebook adds a flat cost per trade, but borrowing fees for the short leg are still left out.
 
 ## Run the notebook
 
